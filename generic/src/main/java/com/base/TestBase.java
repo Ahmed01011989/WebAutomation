@@ -156,7 +156,7 @@ public class TestBase {
 
     //screenshot
     public static void captureScreenshot(WebDriver driver, String screenshotName) {
-        DateFormat df = new SimpleDateFormat("HH_mm_ss");
+        DateFormat df = new SimpleDateFormat("(HH_mm_ss)");
         Date date = new Date();
         df.format(date);
         File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
